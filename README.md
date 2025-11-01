@@ -24,38 +24,14 @@ This project develops an intelligent system to translate such informal text into
 5. **Output:** Candidate diagnoses with confidence scores.
 
 **Output Example:**  
-Read 5 reviews
-------------------------------------------------------------
-Review 1: I have been having a persistent cough and sore throat for 3 days.
+
+**Review 1**: I have been having a persistent cough and sore throat for 3 days.
 Extracted symptom phrases: ['persistent cough', 'sore throat']
 Candidate diagnoses: [('Common Cold', 0.65)]
 
-Review 2: Stomach cramps and nausea since yesterday.
+**Review 2**: Stomach cramps and nausea since yesterday.
 Extracted symptom phrases: ['Stomach cramps', 'nausea since yesterday', 'nausea']
 Candidate diagnoses: [('Gastroenteritis', 0.60)]
-
-
-health_symptom_mapping/
-│
-├── src/
-│ ├── data_preprocessing.py
-│ ├── symptom_extraction.py
-│ ├── symptom_mapping.py
-│ ├── classification.py
-│ └── main.py
-│
-├── data/
-│ └── sample_reviews.txt
-│
-├── results/
-│ └── predictions.txt
-│
-├── notebooks/
-│ └── LSTM_Health_Symptom.ipynb
-│
-├── requirements.txt
-├── .gitignore
-└── README.md
 
 
 ---
@@ -66,11 +42,15 @@ health_symptom_mapping/
    ```bash
    git clone https://github.com/<your-username>/<your-repo-name>.git
    cd <your-repo-name>
-**Create and activate a virtual environment**:
-python -m venv venv
-source venv/bin/activate       # macOS / Linux
-venv\Scripts\activate          # Windows
-**Install dependencies**:
-pip install -r requirements.txt
-**Run the pipeline**:
-python -m src.main --reviews data/sample_reviews.txt
+2. Create and activate a virtual environment:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate       # macOS / Linux
+   venv\Scripts\activate          # Windows
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+4. Run the pipeline:
+   ```bash
+   python -m src.main --reviews data/sample_reviews.txt
+
