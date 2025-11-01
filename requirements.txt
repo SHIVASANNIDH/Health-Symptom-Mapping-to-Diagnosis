@@ -1,0 +1,10 @@
+pandas
+numpy
+scikit-learn
+tensorflow
+nltk
+spacy
+gensim
+python-dotenv
+joblib
+tqdm
